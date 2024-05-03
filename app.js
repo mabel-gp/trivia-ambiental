@@ -1,14 +1,18 @@
-/* Bloque 2-6: muestra el valor de cada radio button para la primera pregunta*/
-document.addEventListener("click",selectDay); 
+/* Bloque 2-8: muestra la alerta para la primera pregunta*/
+let replyDay = document.querySelector("#boton");
+replyDay.addEventListener("click",selectDay);
+
 function selectDay(){
     let day = document.querySelector('input[type="radio"][name="dia_mundial"]:checked');
-    alert('Seleccionaste:  ' + day.value);
-};
+    alert('Seleccionaste:  '+ day.value);
+}
 
 
-/* Bloque 10-14: muestra el valor de cada radio button para la segunda pregunta*/
-document.addEventListener("click",selectOrg);    
+/* Bloque 11-17: muestra la alerta para la segunda pregunta*/
+let replyOrg = document.querySelector("#boton");
+replyOrg.addEventListener("click",selectOrg);
+
 function selectOrg(){
     let org = document.querySelector('input[type="radio"][name="organizacion"]:checked');
-    alert('Seleccionaste:  ' + org.value);
-};
+    alert('También:  ' + org.value);
+}
